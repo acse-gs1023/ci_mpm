@@ -30,9 +30,9 @@ jobs:
            python37-macOS
         ]
         include:
-        - name: python36-ubuntu1804
-          python-version: 3.6
-          os: ubuntu-18.04
+        - name: python36-ubuntu2204
+          python-version: 3.9
+          os: ubuntu-22.04
 
         - name: python38-ubuntu2004
           python-version: 3.8
