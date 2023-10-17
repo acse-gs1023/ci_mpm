@@ -25,7 +25,7 @@ jobs:
 
       matrix:
         name: [
-           python36-ubuntu1804,
+           python36-ubuntu2204,
            python38-ubuntu2004,
            python37-macOS
         ]
