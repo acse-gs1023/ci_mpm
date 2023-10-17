@@ -17,6 +17,10 @@ class TestSimpleFunctions(object):
         isum = my_sum(iterable)
         assert isum == expected
 
+    @pytest.mark.parametrize('iterable, expected', [
+        (5, 120),
+        (4, 24)
+    ])
     def test_factorial(self, iterable, expected):
         iterable = 5
         expected = 120
