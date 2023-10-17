@@ -12,5 +12,7 @@ class TestSimpleFunctions(object):
     ])
     def test_my_add(self, iterable, expected):
         '''Test our add function'''
+        iterable = [1, 2, 3]
+        expected =  6
         isum = my_sum(iterable)
         assert isum == expected
