@@ -3,12 +3,16 @@ name: flake8
 on:
    # Trigger the workflow on push or pull request,
    # but only for the master branch
-   push:
-     branches:
-       - master
-   pull_request:
-     branches:
-       - master
+  workflow_dispatch:
+    inputs:
+      tags:
+        description: 'Run this workflow'
+  push:
+    branches:
+      - master
+  pull_request:
+    branches:
+      - master
 
 jobs:
   flake8:
