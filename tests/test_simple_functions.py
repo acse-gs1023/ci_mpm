@@ -1,6 +1,6 @@
 import pytest
 
-from simple_functions import my_sum
+from simple_functions import my_sum, factorial
 
 
 class TestSimpleFunctions(object):
@@ -13,6 +13,12 @@ class TestSimpleFunctions(object):
     def test_my_add(self, iterable, expected):
         '''Test our add function'''
         iterable = [1, 2, 3]
-        expected =  6
+        expected = 6
         isum = my_sum(iterable)
         assert isum == expected
+
+    def test_factorial(self, iterable, expected):
+        iterable = 5
+        expected = 120
+        fact = factorial(iterable)
+        assert fact == expected
